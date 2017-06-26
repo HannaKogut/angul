@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HomeComponent } from './home/index';
-import { ROUTER_DIRECTIVES } from "@angular/router";
+import { RouterModule } from "@angular/router";
 
 @Component({
   selector: 'app-root',
