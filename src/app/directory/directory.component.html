@@ -1,3 +1,16 @@
-<p>
-  directory works!
-</p>
+<h2>Pukhlia listing</h2>
+	<form id="filter">
+		<label>Filter pukhlias by name: </label>
+		<input type="text" [(ngModel)]="term" [ngModelOptions]="{standalone: true}" />
+	</form>
+<ul id="pukhlia-listing">
+  <li *ngFor="let pukhlia of pukhlias| filter:term">
+    <div class = "single-pukhlia">
+      <span [ngStyle] = "{background: pukhlia.belt}">{{pukhlia.belt}} belt</span>
+      <h3>{{pukhlia.name }}</h3>
+    
+    </div>
+  </li>
+</ul>
+
+<button (click)="logIt()">Log me</button>

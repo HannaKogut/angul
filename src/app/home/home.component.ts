@@ -7,12 +7,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 		homeTitle = "Welcome to the homepage...";
-		@Input() vyshnja;
-		@Output() onYell = new EventEmitter();
-
-		fireYellEvent(e){
-			this.onYell.emit(e);
-		}
+	
 	
 	
   constructor() { }

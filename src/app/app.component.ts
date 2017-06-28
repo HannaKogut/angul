@@ -10,12 +10,4 @@ import { RouterModule } from "@angular/router";
 })
 export class AppComponent {
   title = 'app works!';
-  name = 'pukhlia';
-  vyshnja ={
-		name: "pukhlia",
-		belt:"black"
-	};
-	yell(e){
-		alert("i am yelling");
-	}
 }
